@@ -2,11 +2,15 @@
   <library name="Gradle: com.heinrichreimersoftware:material-intro:1.6@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/27c34db908a6c66cefeea306df7b7def/transformed/jetified-material-intro-1.6/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d17b70535b7581f5a7b0dd88460f7b26/transformed/jetified-material-intro-1.6/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/27c34db908a6c66cefeea306df7b7def/transformed/jetified-material-intro-1.6/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/27c34db908a6c66cefeea306df7b7def/transformed/jetified-material-intro-1.6/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/27c34db908a6c66cefeea306df7b7def/transformed/jetified-material-intro-1.6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d17b70535b7581f5a7b0dd88460f7b26/transformed/jetified-material-intro-1.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d17b70535b7581f5a7b0dd88460f7b26/transformed/jetified-material-intro-1.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d17b70535b7581f5a7b0dd88460f7b26/transformed/jetified-material-intro-1.6/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

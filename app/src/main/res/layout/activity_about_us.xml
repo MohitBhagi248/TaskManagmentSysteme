@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/white"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/contact_us"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backIV"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:src="@drawable/round_arrow_back_black_24"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="@id/titleTV"
+            app:layout_constraintStart_toStartOf="@id/titleTV"
+            app:layout_constraintTop_toTopOf="@id/titleTV" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mohit Kumar Bhagi (C0851229)"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:id="@+id/firstTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTV"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mayank Sanjeev Nibhoria (C0854281)"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@id/firstTV"
+            android:id="@+id/secondTV"
+            app:layout_constraintStart_toStartOf="@id/firstTV"
+            app:layout_constraintTop_toBottomOf="@id/firstTV"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Adarsh Bhatia (C0852822)"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@id/firstTV"
+            app:layout_constraintStart_toStartOf="@id/firstTV"
+            app:layout_constraintTop_toBottomOf="@id/secondTV"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

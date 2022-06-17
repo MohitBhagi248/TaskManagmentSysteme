@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="TextInputLayoutOutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/dullGrey</item>
+        <item name="hintTextColor">@color/dullGrey</item>
+        <item name="colorControlActivated">@color/dullGrey</item>
+        <item name="boxStrokeColor">@color/greyWhite</item>
+        <item name="errorTextColor">@color/red</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">@color/greyWhite</item>
+        <item name="hintTextColor">@color/greyWhite</item>
+        <item name="colorControlActivated">@color/blue</item>
+        <item name="errorTextColor">@color/red</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_open_animation</item>
+        <item name="android:windowExitAnimation">@anim/dialog_close_animation</item>
+    </style>
+
+    <style name="DialogButtonTheme">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="DatePicker.Light" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="DatePicker.Dark" parent="Theme.AppCompat.Dialog">
+        <item name="android:colorAccent">@color/blue</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/greyWhite</item>
+        <item name="colorControlActivated">@color/blue</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="TimePicker.Light" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="TimePicker.Dark" parent="Theme.AppCompat.Dialog">
+        <item name="android:colorAccent">@color/blue</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorControlActivated">@color/blue</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <item name="android:textColorSecondaryInverse">@color/white</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+
+    <style name="bottomStyle" parent="Animation.Design.BottomSheetDialog">
+        <item name="android:windowEnterAnimation">@anim/sb__bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/sb__bottom_out</item>
+    </style>
+
+
+</resources>

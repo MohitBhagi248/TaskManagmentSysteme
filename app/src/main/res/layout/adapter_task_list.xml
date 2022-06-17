@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_rv"
+        android:elevation="@dimen/_3sdp"
+        android:translationZ="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTV"
+            android:text="@string/title"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:padding="@dimen/_3sdp"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:layout_constraintEnd_toStartOf="@id/editIV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeTV"
+            android:padding="@dimen/_3sdp"
+            android:text=""
+            android:layout_marginBottom="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="@dimen/_12ssp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toEndOf="@id/titleTV"
+            app:layout_constraintStart_toStartOf="@id/titleTV"
+            app:layout_constraintTop_toBottomOf="@id/titleTV"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/editIV"
+            app:layout_constraintBottom_toBottomOf="@id/timeTV"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            app:layout_constraintEnd_toStartOf="@id/deleteIV"
+            app:layout_constraintTop_toTopOf="@id/titleTV"/>
+<androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_icon"
+            android:padding="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:id="@+id/deleteIV"
+    app:layout_constraintBottom_toBottomOf="@id/editIV"
+    app:layout_constraintTop_toTopOf="@id/editIV"
+    app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

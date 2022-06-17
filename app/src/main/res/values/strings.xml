@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Task Management</string>
+    <string name="splash_text">Task Management System</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intro_1_title">Plan your day</string>
+    <string name="intro_1_description">Organize your tasks and don\'t forget about important things!</string>
+    <string name="intro_2_title">Manage your tasks easily</string>
+    <string name="intro_2_description">Use left or right swipes to remove task and up or down to change it\'s position in the list</string>
+    <string name="intro_3_title">Add task using voice</string>
+    <string name="intro_3_description">Add new tasks quickly using the voice input by long press the + button</string>
+    <string name="intro_4_title">Let\'s get started</string>
+    <string name="intro_4_description">Get rid of procrastination and improve your productivity!</string>
+    <string name="add_task">Add Task</string>
+    <string name="about_us">About us</string>
+    <string name="search">Search</string>
+    <string name="new_task">New Task</string>
+    <string name="title">Title</string>
+    <string name="add_a_note">Add a note</string>
+    <string name="reminder">Reminder</string>
+    <string name="you_can_create_new_tasks_n_using_the_add_task_button">You can create new tasks \n using the add task button</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="loading">Loading ...</string>
+    <string name="please_wait">Please wait</string>
+    <string name="contact_us">Contact Us</string>
+
+</resources>

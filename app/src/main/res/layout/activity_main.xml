@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fillViewport="true">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/white">
+
+
+           <androidx.appcompat.widget.AppCompatTextView
+               android:id="@+id/titleTV"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:background="@color/white"
+               android:gravity="center"
+               android:padding="@dimen/_10sdp"
+               android:text="@string/app_name"
+               android:textColor="@color/black"
+               android:textSize="@dimen/_14ssp"
+               android:textStyle="bold"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/sortIV"
+               android:layout_width="wrap_content"
+               android:layout_height="0dp"
+               android:layout_marginEnd="@dimen/_5sdp"
+               android:paddingHorizontal="@dimen/_8sdp"
+               android:paddingVertical="@dimen/_8sdp"
+               android:src="@drawable/sort"
+               android:visibility="gone"
+               app:layout_constraintBottom_toBottomOf="@id/titleTV"
+               app:layout_constraintEnd_toEndOf="@id/titleTV"
+               app:layout_constraintTop_toTopOf="@id/titleTV" />
+
+
+           <androidx.appcompat.widget.AppCompatEditText
+               android:id="@+id/searchET"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginHorizontal="@dimen/_5sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:background="@drawable/bg_edit_new"
+               android:drawableStart="@drawable/ic_search"
+               android:drawablePadding="@dimen/_10sdp"
+               android:hint="@string/search"
+               android:imeOptions="actionSearch"
+               android:inputType="textNoSuggestions"
+               android:padding="@dimen/_10sdp"
+               android:singleLine="true"
+               android:textColor="@color/black"
+               android:textSize="@dimen/_13ssp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/titleTV"
+               app:layout_constraintWidth_percent=".85" />
+
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/emptyIV"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:src="@drawable/illustration_no_tasks"
+               app:layout_constraintBottom_toTopOf="@id/addTaskTV"
+               app:layout_constraintDimensionRatio="2:1"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/titleTV" />
+
+
+           <androidx.appcompat.widget.AppCompatTextView
+               android:id="@+id/emptyTV"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:padding="@dimen/_10sdp"
+               android:text="@string/you_can_create_new_tasks_n_using_the_add_task_button"
+               android:textColor="@color/greyWhite"
+               android:textSize="@dimen/_13ssp"
+               android:textStyle="bold"
+               app:layout_constraintEnd_toEndOf="@id/emptyIV"
+               app:layout_constraintStart_toStartOf="@id/emptyIV"
+               app:layout_constraintTop_toBottomOf="@id/emptyIV" />
+
+
+           <androidx.constraintlayout.widget.Group
+               android:id="@+id/emptyG"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:visibility="gone"
+               app:constraint_referenced_ids="emptyIV,emptyTV" />
+
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:orientation="vertical"
+               app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+               android:id="@+id/taskRV"
+               android:nestedScrollingEnabled="true"
+               android:layout_marginVertical="@dimen/_10sdp"
+               app:layout_constraintBottom_toTopOf="@id/addTaskTV"
+               app:layout_constraintEnd_toEndOf="@id/searchET"
+               app:layout_constraintStart_toStartOf="@id/searchET"
+               app:layout_constraintTop_toBottomOf="@id/searchET" />
+
+
+           <androidx.appcompat.widget.AppCompatTextView
+               android:id="@+id/addTaskTV"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               android:drawableTop="@drawable/add_btn"
+               android:drawablePadding="@dimen/_8sdp"
+               android:gravity="center"
+               android:padding="@dimen/_10sdp"
+               android:text="@string/add_task"
+               android:textColor="@color/black"
+               android:textSize="@dimen/_12ssp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toStartOf="@id/aboutUsTV"
+               app:layout_constraintHorizontal_chainStyle="packed"
+               app:layout_constraintStart_toStartOf="parent" />
+
+           <androidx.appcompat.widget.AppCompatTextView
+               android:id="@+id/aboutUsTV"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               android:drawableTop="@drawable/ic_connect_us"
+               android:drawablePadding="@dimen/_8sdp"
+               android:gravity="center"
+               android:padding="@dimen/_10sdp"
+               android:text="@string/contact_us"
+               android:textColor="@color/black"
+               android:textSize="@dimen/_12ssp"
+               app:layout_constraintBottom_toBottomOf="@id/addTaskTV"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_chainStyle="packed"
+               app:layout_constraintStart_toEndOf="@id/addTaskTV"
+               app:layout_constraintTop_toTopOf="@id/addTaskTV" />
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+   </androidx.core.widget.NestedScrollView>
+</layout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/white"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/new_task"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backIV"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:src="@drawable/round_arrow_back_black_24"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="@id/titleTV"
+            app:layout_constraintStart_toStartOf="@id/titleTV"
+            app:layout_constraintTop_toTopOf="@id/titleTV" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            android:hint="@string/title"
+            android:background="@drawable/bg_edit"
+            android:id="@+id/taskTitleET"
+            android:maxLines="5"
+            android:ellipsize="end"
+            app:layout_constraintWidth_percent=".8"
+            android:nestedScrollingEnabled="true"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTV"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:hint="@string/add_a_note"
+            android:background="@drawable/bg_edit"
+            android:id="@+id/addNoteET"
+            android:maxLines="5"
+            android:ellipsize="end"
+            android:nestedScrollingEnabled="true"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="@id/taskTitleET"
+            app:layout_constraintStart_toStartOf="@id/taskTitleET"
+            app:layout_constraintTop_toBottomOf="@id/taskTitleET"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_11ssp"
+            android:hint="@string/reminder"
+            android:id="@+id/reminderTV"
+            android:drawablePadding="@dimen/_10sdp"
+            android:drawableStart="@drawable/round_access_time_black_24"
+            android:background="@drawable/bg_edit_new"
+            app:layout_constraintEnd_toEndOf="@id/taskTitleET"
+            app:layout_constraintStart_toStartOf="@id/taskTitleET"
+            app:layout_constraintTop_toBottomOf="@id/addNoteET"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:src="@drawable/round_close_black_24"
+            android:visibility="gone"
+            android:id="@+id/removeTimeIV"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="@+id/reminderTV"
+            app:layout_constraintBottom_toBottomOf="@+id/reminderTV"
+            app:layout_constraintEnd_toEndOf="@+id/reminderTV"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/add_task"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:id="@+id/addTaskTV"
+            android:gravity="center"
+            app:layout_constraintWidth_percent=".7"
+            android:textColor="@color/white"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            app:layout_constraintBottom_toTopOf="@+id/divideV"
+            app:layout_constraintEnd_toEndOf="@id/taskTitleET"
+            app:layout_constraintStart_toStartOf="@id/taskTitleET"
+            app:layout_constraintTop_toBottomOf="@id/reminderTV"
+            android:background="@drawable/button_gradient_background"/>
+
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/divideV"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addTaskTV"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
